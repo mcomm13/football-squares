@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "football-squares-3f9d8",
+    "production": "football-squares-number-picker"
+  }
+}
