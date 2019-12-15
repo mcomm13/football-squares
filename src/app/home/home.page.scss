@@ -1,0 +1,40 @@
+$team1-color: #d62027;
+$team2-color: #013369;
+
+ion-row {
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+
+  &:last-of-type {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+ion-card {
+  margin: 0 auto;
+  max-width: 660px;
+}
+
+.team1-heading {
+  color: $team1-color;
+  font-size: 18px;
+}
+
+.team2-heading {
+  color: $team2-color;
+  font-size: 18px;
+}
+
+.team1-style {
+  background-color: $team1-color;
+  color: #fff;
+  font-size: 18px;
+  border-right: 1px solid #ffffff;
+}
+
+.team2-style {
+  background-color: $team2-color;
+  color: #ffffff;
+  font-size: 18px;
+}

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>
+      Football Squares Number Picker
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+  <div class="ion-padding">
+    <h2>
+      Use this app to pick random numbers for the headers of your Football
+      Squares grid
+    </h2>
+  </div>
+  <ion-card>
+    <div class="ion-padding">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="team1-heading">
+            Team 1
+          </ion-col>
+          <ion-col class="team2-heading">
+            Team 2
+          </ion-col>
+        </ion-row>
+        <ion-row *ngFor="let pair of numberPairs">
+          <ion-col class="team1-style">
+            {{pair.team1}}
+          </ion-col>
+          <ion-col class="team2-style">
+            {{pair.team2}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="ion-padding">
+      <ion-button color="primary" (click)="assignNumberPairs()"
+        >Get Numbers</ion-button
+      >
+    </div>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-title>&copy; 2019 Michael Commendatore</ion-title>
+  </ion-toolbar>
+</ion-footer>
